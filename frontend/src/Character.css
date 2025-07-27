@@ -1,0 +1,135 @@
+
+
+/* Character Component Styles */
+.character-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.character-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.character-name {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #b8b8b8;
+}
+
+.character-picture {
+    width: 100px;
+    height: 200px;
+    border-radius: 10%;
+    object-fit: fill;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.character-level {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #bbbbbb;
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+}
+
+.stat-block {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-block h3 {
+    margin: 0 0 20px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+.stats-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.stat-item:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.stat-label {
+    font-weight: 600;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.stat-value {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+.level-icon-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-icon {
+    margin: 5% auto;
+    width: 60%;
+    height: 60%;
+    display: block;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .character-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .character-name {
+        font-size: 1.6rem;
+    }
+}

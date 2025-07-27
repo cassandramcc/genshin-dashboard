@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Neuvillette",
+        "level": 90,
+        "element": "hydro",
+        "current_stats": {
+            "hp": 37870,
+            "attack": 1403,
+            "defense": 732,
+            "elemental_mastery": 0,
+            "energy_recharge": 121.4,
+            "crit_rate": 44.3,
+            "crit_damage": 215.5,
+            "elemental_damage_bonus": 46.6,
+            "physical_damage_bonus": 0
+
+        },
+        "target_stats": {
+            "hp": 40172,
+            "attack": 1157,
+            "defense": 576,
+            "crit_rate": 62.2,
+            "crit_damage": 290.8,
+            "energy_recharge": 105.2,
+            "elemental_damage_bonus": 46.6
+        },
+        "picture": "/assets/images/Neuvillette_Card.webp"
+    },
+    {
+        "name": "Neuvillette",
+        "level": 90,
+        "element": "hydro",
+        "current_stats": {
+            "hp": 37870,
+            "attack": 1403,
+            "defense": 732,
+            "elemental_mastery": 0,
+            "energy_recharge": 121.4,
+            "crit_rate": 44.3,
+            "crit_damage": 215.5,
+            "elemental_damage_bonus": 46.6,
+            "physical_damage_bonus": 0
+
+        },
+        "target_stats": {
+            "hp": 40172,
+            "attack": 1157,
+            "defense": 576,
+            "crit_rate": 62.2,
+            "crit_damage": 290.8,
+            "energy_recharge": 105.2,
+            "elemental_damage_bonus": 46.6
+        },
+        "picture": "/assets/images/Neuvillette_Card.webp"
+    }
+]
