@@ -5,31 +5,30 @@ function Character({ character }) {
     const red    = [204, 50, 50]
     const yellow = [231, 180, 22]
     const green  = [78, 197, 49]
-    const blue   = [25, 25, 164]
+    const blue   = [62, 205, 233]
+
+    const max_percentage = 1.5
 
     function calculatePercentage(x, y) {
-        // percentage calculated with x / y
         if (y == 0) {
             // if the y is 0, return 1.5 = 150%
-            return 1.5
+            return max_percentage
         }
 
-        return x / y
+        return Math.min(x / y, max_percentage)
     }
 
     function chooseColour(current, target)  {
-        let percentage = 0
-        if (current <= target) {
-            percentage = calculatePercentage(current, target)
-        } else {
-            percentage = calculatePercentage(target, current)
-        }
+        let percentage = calculatePercentage(current, target)
 
         if (percentage <= 0.9) {
             let result = interpolate(red, yellow, percentage)
             return `rgb(${result[0]}, ${result[1]}, ${result[2]})`
-        } else {
+        } else if (percentage <= 1) {
             let result = interpolate(yellow, green, percentage)
+            return `rgb(${result[0]}, ${result[1]}, ${result[2]})`
+        } else {
+             let result = interpolate(green, blue, percentage)
             return `rgb(${result[0]}, ${result[1]}, ${result[2]})`
         }
     }
