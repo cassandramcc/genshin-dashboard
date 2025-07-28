@@ -1,25 +1,56 @@
-import {useState} from 'react';
 import './Character.css';
-import {ConvertElementToIcon, G_ChooseColour} from "../wailsjs/go/main/App";
 
 function Character({ character }) {
 
+    const red    = [204, 50, 50]
+    const yellow = [231, 180, 22]
+    const green  = [78, 197, 49]
+    const blue   = [25, 25, 164]
 
-  function generateBackgroundColor(current, target) {
-    let percentageDiff = (target - current) / current
-    let r = interpolateR(percentageDiff)
-    let g = interpolateG(percentageDiff)
-    let b = interpolateB(percentageDiff)
-    return `rgba(${r}, ${g}, ${b}, 0.5)`
-  }
+    function calculatePercentage(x, y) {
+        // percentage calculated with x / y
+        if (y == 0) {
+            // if the y is 0, return 1.5 = 150%
+            return 1.5
+        }
 
-  function chooseColour(current, target) {
+        return x / y
+    }
 
-    G_ChooseColour((target - current) / target).then((colour) => {
-        console.log(colour)
-        return `rgba(${colour[0]}, ${colour[1]}, ${colour[2]}, ${colour[3]})`
-    });
-  }
+    function chooseColour(current, target)  {
+        let percentage = 0
+        if (current <= target) {
+            percentage = calculatePercentage(current, target)
+        } else {
+            percentage = calculatePercentage(target, current)
+        }
+
+        if (percentage <= 0.9) {
+            let result = interpolate(red, yellow, percentage)
+            return `rgb(${result[0]}, ${result[1]}, ${result[2]})`
+        } else {
+            let result = interpolate(yellow, green, percentage)
+            return `rgb(${result[0]}, ${result[1]}, ${result[2]})`
+        }
+    }
+
+    function interpolate(colour1, colour2, percentage) {
+        let difference  = []
+        for (let i = 0 ; i < colour1.length; i++) {
+            difference[i] = colour2[i] - colour1[i]
+        }
+        
+        let scaled = []
+        for (let i = 0 ; i < difference.length; i++) {
+            scaled[i] = percentage*difference[i]
+        }
+
+        let output = []
+        for (let i = 0 ; i < colour1.length; i++) {
+            output[i] = colour1[i] + scaled[i]
+        }
+        return output
+    }
 
     function convertElement(element) {
         switch (element) {
@@ -47,7 +78,7 @@ function Character({ character }) {
     return <div className="character-container">No character data available</div>;
   }
 
-  const StatBlock = ({ currentStats, targetStats }) => (
+  let StatBlock = ({ currentStats, targetStats }) => (
     <>
         <div className="stat-block">
         <h3>Current Stats</h3>
