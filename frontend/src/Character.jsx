@@ -1,26 +1,8 @@
 import {useState} from 'react';
 import './Character.css';
-import {ConvertElementToIcon} from "../wailsjs/go/main/App";
+import {ConvertElementToIcon, G_ChooseColour} from "../wailsjs/go/main/App";
 
 function Character({ character }) {
-
-  var style = {backgroundColor: 'rgba(29, 176, 196, 0.5)'};
-  var red = [204, 50, 50, 1];
-  var yellow = [231, 180, 22, 1];
-  var green = [78, 197, 49, 1];
-  var blue = [25, 25, 164, 1];
-
-  function interpolateR(x) {
-    return Math.round(78 + (x - 0) * (204 - 78) / (100 - 0))
-  }
-
-  function interpolateG(x) {
-    return Math.round(50 + ((197 - 50) / (100 - 0)) * (x - 50))
-  }
-
-  function interpolateB(x) {
-    return Math.round(50 + ((49 - 50) / (100 - 0)) * (x - 50))
-  }
 
 
   function generateBackgroundColor(current, target) {
@@ -31,11 +13,13 @@ function Character({ character }) {
     return `rgba(${r}, ${g}, ${b}, 0.5)`
   }
 
-  function convertElementToIcon() {
-          ConvertElementToIcon(character.element).then((icon) => {
-            return icon
-          });
-    }
+  function chooseColour(current, target) {
+
+    G_ChooseColour((target - current) / target).then((colour) => {
+        console.log(colour)
+        return `rgba(${colour[0]}, ${colour[1]}, ${colour[2]}, ${colour[3]})`
+    });
+  }
 
     function convertElement(element) {
         switch (element) {
@@ -68,39 +52,39 @@ function Character({ character }) {
         <div className="stat-block">
         <h3>Current Stats</h3>
         <div className="stats-grid">
-            <div className="stat-item" style={{backgroundColor: generateBackgroundColor(currentStats.hp, targetStats.hp)}}>
+            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.hp, targetStats.hp)}}>
                 <span className="stat-label">HP:</span>
                 <span className="stat-value">{currentStats.hp}</span>
             </div>
-            <div className="stat-item" style={{backgroundColor: generateBackgroundColor(currentStats.attack, targetStats.attack)}}>
+            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.attack, targetStats.attack)}}>
                 <span className="stat-label">Attack:</span>
                 <span className="stat-value">{currentStats.attack}</span>
             </div>
-            <div className="stat-item" style={{backgroundColor: generateBackgroundColor(currentStats.defense, targetStats.defense)}}>
+            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.defense, targetStats.defense)}}>
                 <span className="stat-label">Defense:</span>
                 <span className="stat-value">{currentStats.defense}</span>
             </div>
-            <div className="stat-item" style={{backgroundColor: generateBackgroundColor(currentStats.elemental_mastery, targetStats.elemental_mastery)}}>
+            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.elemental_mastery, targetStats.elemental_mastery)}}>
                 <span className="stat-label">Elemental Mastery:</span>
                 <span className="stat-value">{currentStats.elemental_mastery}</span>
             </div>
-            <div className="stat-item" style={{backgroundColor: generateBackgroundColor(currentStats.energy_recharge, targetStats.energy_recharge)}}>
+            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.energy_recharge, targetStats.energy_recharge)}}>
                 <span className="stat-label">Energy Recharge:</span>
                 <span className="stat-value">{currentStats.energy_recharge}%</span>
             </div>
-            <div className="stat-item" style={{backgroundColor: generateBackgroundColor(currentStats.crit_rate, targetStats.crit_rate)}}>
+            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.crit_rate, targetStats.crit_rate)}}>
                 <span className="stat-label">Crit Rate:</span>
                 <span className="stat-value">{currentStats.crit_rate}%</span>
             </div>
-            <div className="stat-item" style={{backgroundColor: generateBackgroundColor(currentStats.crit_damage, targetStats.crit_damage)}}>
+            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.crit_damage, targetStats.crit_damage)}}>
                 <span className="stat-label">Crit Damage:</span>
                 <span className="stat-value">{currentStats.crit_damage}%</span>
             </div>
-            <div className="stat-item" style={{backgroundColor: generateBackgroundColor(currentStats.elemental_damage_bonus, targetStats.elemental_damage_bonus)}}>
+            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.elemental_damage_bonus, targetStats.elemental_damage_bonus)}}>
                 <span className="stat-label">Elemental Damage Bonus:</span>
                 <span className="stat-value">{currentStats.elemental_damage_bonus}%</span>
             </div>
-            <div className="stat-item" style={{backgroundColor: generateBackgroundColor(currentStats.physical_damage_bonus, targetStats.physical_damage_bonus)}}>
+            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.physical_damage_bonus, targetStats.physical_damage_bonus)}}>
                 <span className="stat-label">Physical Damage Bonus:</span>
                 <span className="stat-value">{currentStats.physical_damage_bonus}%</span>
             </div>

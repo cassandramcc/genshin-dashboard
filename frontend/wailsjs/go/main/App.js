@@ -6,6 +6,10 @@ export function ConvertElementToIcon(arg1) {
   return window['go']['main']['App']['ConvertElementToIcon'](arg1);
 }
 
+export function G_ChooseColour(arg1) {
+  return window['go']['main']['App']['G_ChooseColour'](arg1);
+}
+
 export function GetCharacters() {
   return window['go']['main']['App']['GetCharacters']();
 }

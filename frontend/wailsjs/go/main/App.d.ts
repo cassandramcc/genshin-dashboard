@@ -4,6 +4,8 @@ import {main} from '../models';
 
 export function ConvertElementToIcon(arg1:main.Element):Promise<string>;
 
+export function G_ChooseColour(arg1:number):Promise<Array<number>>;
+
 export function GetCharacters():Promise<Array<main.Character>>;
 
 export function Greet(arg1:string):Promise<string>;
