@@ -1,6 +1,11 @@
+import './Titlebar.css'
+
 function Titlebar() {
     return (
-        <h1>Genshin Dashboard</h1>
+        <div className="titlebar">
+            <img src="/assets/images/icon.png"/>
+            <h1>Genshin Dashboard</h1>
+        </div>
     )
 }
 
