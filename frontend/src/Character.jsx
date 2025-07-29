@@ -80,84 +80,69 @@ function Character({ character }) {
   let StatBlock = ({ currentStats, targetStats }) => (
     <>
         <div className="stat-block">
-        <h3>Current Stats</h3>
-        <div className="stats-grid">
-            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.hp, targetStats.hp)}}>
-                <span className="stat-label">HP:</span>
-                <span className="stat-value">{currentStats.hp}</span>
-            </div>
-            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.attack, targetStats.attack)}}>
-                <span className="stat-label">Attack:</span>
-                <span className="stat-value">{currentStats.attack}</span>
-            </div>
-            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.defense, targetStats.defense)}}>
-                <span className="stat-label">Defense:</span>
-                <span className="stat-value">{currentStats.defense}</span>
-            </div>
-            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.elemental_mastery, targetStats.elemental_mastery)}}>
-                <span className="stat-label">Elemental Mastery:</span>
-                <span className="stat-value">{currentStats.elemental_mastery}</span>
-            </div>
-            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.energy_recharge, targetStats.energy_recharge)}}>
-                <span className="stat-label">Energy Recharge:</span>
-                <span className="stat-value">{currentStats.energy_recharge}%</span>
-            </div>
-            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.crit_rate, targetStats.crit_rate)}}>
-                <span className="stat-label">Crit Rate:</span>
-                <span className="stat-value">{currentStats.crit_rate}%</span>
-            </div>
-            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.crit_damage, targetStats.crit_damage)}}>
-                <span className="stat-label">Crit Damage:</span>
-                <span className="stat-value">{currentStats.crit_damage}%</span>
-            </div>
-            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.elemental_damage_bonus, targetStats.elemental_damage_bonus)}}>
-                <span className="stat-label">Elemental Damage Bonus:</span>
-                <span className="stat-value">{currentStats.elemental_damage_bonus}%</span>
-            </div>
-            <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.physical_damage_bonus, targetStats.physical_damage_bonus)}}>
-                <span className="stat-label">Physical Damage Bonus:</span>
-                <span className="stat-value">{currentStats.physical_damage_bonus}%</span>
-            </div>
-        </div>
-        </div>
-            <div className="stat-block">
-            <h3>Target Stats</h3>
             <div className="stats-grid">
-                <div className="stat-item">
-                    <span className="stat-label">HP:</span>
-                    <span className="stat-value">{targetStats.hp}</span>
+                <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.hp, targetStats.hp)}}>
+                    <span className="stat-label">HP</span>
+                    <div className="stat-values">
+                        <span className="stat-value">{currentStats.hp}</span>
+                        <span className="stat-value">{targetStats.hp}</span>
+                    </div>
                 </div>
-                <div className="stat-item">
-                    <span className="stat-label">Attack:</span>
-                    <span className="stat-value">{targetStats.attack}</span>
+                <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.attack, targetStats.attack)}}>
+                    <span className="stat-label">Attack</span>
+                    <div className="stat-values">
+                        <span className="stat-value">{currentStats.attack}</span>
+                        <span className="stat-value">{targetStats.attack}</span>
+                    </div>
                 </div>
-                <div className="stat-item">
-                    <span className="stat-label">Defense:</span>
-                    <span className="stat-value">{targetStats.defense}</span>
+                <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.defense, targetStats.defense)}}>
+                    <span className="stat-label">Defense</span>
+                    <div className="stat-values">
+                        <span className="stat-value">{currentStats.defense}</span>
+                        <span className="stat-value">{targetStats.defense}</span>
+                    </div>
                 </div>
-                <div className="stat-item">
-                    <span className="stat-label">Elemental Mastery:</span>
-                    <span className="stat-value">{targetStats.elemental_mastery}</span>
+                <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.elemental_mastery, targetStats.elemental_mastery)}}>
+                    <span className="stat-label">Elemental Mastery</span>
+                    <div className="stat-values">
+                        <span className="stat-value">{currentStats.elemental_mastery}</span>
+                        <span className="stat-value">{targetStats.elemental_mastery}</span>
+                    </div>
                 </div>
-                <div className="stat-item">
-                    <span className="stat-label">Energy Recharge:</span>
-                    <span className="stat-value">{targetStats.energy_recharge}%</span>
+                <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.energy_recharge, targetStats.energy_recharge)}}>
+                    <span className="stat-label">Energy Recharge</span>
+                    <div className="stat-values">
+                        <span className="stat-value">{currentStats.energy_recharge}%</span>
+                        <span className="stat-value">{targetStats.energy_recharge}%</span>
+                    </div>
                 </div>
-                <div className="stat-item">
-                    <span className="stat-label">Crit Rate:</span>
-                    <span className="stat-value">{targetStats.crit_rate}%</span>
+                <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.crit_rate, targetStats.crit_rate)}}>
+                    <span className="stat-label">Crit Rate</span>
+                    <div className="stat-values">
+                        <span className="stat-value">{currentStats.crit_rate}%</span>
+                        <span className="stat-value">{targetStats.crit_rate}%</span>
+                    </div>
                 </div>
-                <div className="stat-item">
-                    <span className="stat-label">Crit Damage:</span>
-                    <span className="stat-value">{targetStats.crit_damage}%</span>
+                <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.crit_damage, targetStats.crit_damage)}}>
+                    <span className="stat-label">Crit Damage</span>
+                    <div className="stat-values">
+                        <span className="stat-value">{currentStats.crit_damage}%</span>
+                        <span className="stat-value">{targetStats.crit_damage}%</span>
+                    </div>
                 </div>
-                <div className="stat-item">
-                    <span className="stat-label">Elemental Damage Bonus:</span>
-                    <span className="stat-value">{targetStats.elemental_damage_bonus}%</span>
+                <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.elemental_damage_bonus, targetStats.elemental_damage_bonus)}}>
+                    <span className="stat-label">Elemental Damage Bonus</span>
+                    <div className="stat-values">
+                        <span className="stat-value">{currentStats.elemental_damage_bonus}%</span>
+                        <span className="stat-value">{targetStats.elemental_damage_bonus}%</span>
+                    </div>
                 </div>
-                <div className="stat-item">
-                    <span className="stat-label">Physical Damage Bonus:</span>
-                    <span className="stat-value">{targetStats.physical_damage_bonus}%</span>
+                <div className="stat-item" style={{backgroundColor: chooseColour(currentStats.physical_damage_bonus, targetStats.physical_damage_bonus)}}>
+                    <span className="stat-label">Physical Damage Bonus</span>
+                    <div className="stat-values">
+                        <span className="stat-value">{currentStats.physical_damage_bonus}%</span>
+                        <span className="stat-value">{targetStats.physical_damage_bonus}%</span>
+                    </div>
                 </div>
             </div>
         </div>

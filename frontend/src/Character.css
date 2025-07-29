@@ -2,23 +2,21 @@
 
 /* Character Component Styles */
 .character-container {
-    max-width: 1500px;
+    max-width: 600px;
     margin: 0 auto;
     font-family: 'Nunito', sans-serif;
     margin-bottom: 30px;
     padding-bottom: 30px;
-    border-bottom: 2px solid #eaeaea6b;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid #eaeaea67;
+    border-radius: 12px;
 }
 
 .character-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    border: 1px solid #eaeaea67;
 }
 
 .character-name {
@@ -56,11 +54,8 @@
 
 .stat-block {
     flex: 1;
-    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 20px;
-    backdrop-filter: blur(10px);
-    border: 1px solid #eaeaea67;
 }
 
 .stat-block h3 {
@@ -92,6 +87,13 @@
     font-weight: 600;
     color: #141414;
     font-size: 0.9rem;
+}
+
+.stat-values {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 12px;
 }
 
 .stat-value {
