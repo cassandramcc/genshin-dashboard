@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"log"
 	"os"
 )
@@ -40,6 +41,7 @@ func (a *App) GetCharacters() []*Character {
 }
 
 func (a *App) AddCharacter(character *Character) {
+	fmt.Println("Adding character:", character)
 	a.Characters = append(a.Characters, character)
 	data, err := json.MarshalIndent(a.Characters, "", "  ")
 	if err != nil {
