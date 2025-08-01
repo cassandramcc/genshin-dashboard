@@ -1,5 +1,20 @@
 .titlebar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.title {
+    display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.titlebar > :last-child {
+    margin-left: auto;
 }
