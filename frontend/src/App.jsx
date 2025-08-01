@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import './App.css';
 import {GetCharacters} from "../wailsjs/go/main/App";
-import Characters from './Characters';
+import Characters from './Characters/Characters';
 
 function App() {
     const [characters, setCharacters] = useState([]);
