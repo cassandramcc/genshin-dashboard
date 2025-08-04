@@ -28,12 +28,12 @@
     "element": "hydro",
     "icon": ""
   },
-  "wriothesely": {
-    "name": "Wriothesely",
-    "level": 90,
+  "test": {
+    "name": "test",
+    "level": 12,
     "current_stats": {
-      "hp": 2000,
-      "attack": 100,
+      "hp": 0,
+      "attack": 0,
       "defense": 0,
       "elemental_mastery": 0,
       "energy_recharge": 0,
@@ -43,8 +43,37 @@
       "elemental_damage_bonus": 0
     },
     "target_stats": {
-      "hp": 3001,
+      "hp": 0,
       "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "picture": "",
+    "element": "cryo",
+    "icon": ""
+  },
+  "wriothesely": {
+    "name": "Wriothesely",
+    "level": 90,
+    "current_stats": {
+      "hp": 2000,
+      "attack": 100,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 100,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 3001,
+      "attack": 200,
       "defense": 0,
       "elemental_mastery": 0,
       "energy_recharge": 0,
