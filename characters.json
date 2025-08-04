@@ -32,8 +32,8 @@
     "name": "Wriothesely",
     "level": 90,
     "current_stats": {
-      "hp": 0,
-      "attack": 0,
+      "hp": 2000,
+      "attack": 100,
       "defense": 0,
       "elemental_mastery": 0,
       "energy_recharge": 0,
@@ -43,7 +43,7 @@
       "elemental_damage_bonus": 0
     },
     "target_stats": {
-      "hp": 0,
+      "hp": 3001,
       "attack": 0,
       "defense": 0,
       "elemental_mastery": 0,

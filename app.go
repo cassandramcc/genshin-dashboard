@@ -7,6 +7,8 @@ import (
 	"log"
 	"os"
 	"strings"
+
+	"github.com/tidwall/sjson"
 )
 
 // App struct
@@ -53,6 +55,34 @@ func (a *App) AddCharacter(character *Character) {
 		log.Fatalf("failed to write characters-new.json, not overwriting old file: %v", err)
 		return
 	}
+	// overwrite the old file
+	if err := os.Rename("characters-new.json", "characters.json"); err != nil {
+		log.Fatalf("failed to rename characters-new.json to characters.json: %v", err)
+	}
+}
+
+func (a *App) UpdateCharacter(name, path string, value float32) {
+	fmt.Printf("Updating character %s at path %s with value %f\n", name, path, value)
+	_, exists := a.Characters[strings.ToLower(name)]
+	if !exists {
+		log.Fatalf("Updating a character which doesn't exist: %s", name)
+	}
+
+	currentData, err := os.ReadFile("characters.json")
+	if err != nil {
+		log.Fatalf("failed to read characters.json: %v", err)
+	}
+
+	newData, err := sjson.SetBytes(currentData, path, value)
+	if err != nil {
+		log.Fatalf("failed to update characters.json: %v", err)
+	}
+
+	if err := os.WriteFile("characters-new.json", newData, 0644); err != nil {
+		log.Fatalf("failed to write characters-new.json, not overwriting old file: %v", err)
+		return
+	}
+
 	// overwrite the old file
 	if err := os.Rename("characters-new.json", "characters.json"); err != nil {
 		log.Fatalf("failed to rename characters-new.json to characters.json: %v", err)

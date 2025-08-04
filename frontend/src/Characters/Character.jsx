@@ -1,5 +1,6 @@
 import './Character.css';
 import StatBlock from './StatBlock';
+import { CharacterProvider } from './CharacterContext';
 
 function Character({ character }) {
 
@@ -30,20 +31,22 @@ function Character({ character }) {
   }
 
   return (
-    <div className="character-container">
-      <div className="character-header">
-        <img src={character.picture} className="character-picture" />
-        <h2 className="character-name">{character.name}</h2>
-        <div className="level-icon-block">
-            <span className="character-level">Level {character.level}</span>
-            <img src={convertElement(character.element)} className="character-icon" alt={`${character.name} icon`} />
+    <CharacterProvider characterName={character.name.toLowerCase()}>
+      <div className="character-container">
+        <div className="character-header">
+          <img src={character.picture} className="character-picture" />
+          <h2 className="character-name">{character.name}</h2>
+          <div className="level-icon-block">
+              <span className="character-level">Level {character.level}</span>
+              <img src={convertElement(character.element)} className="character-icon" alt={`${character.name} icon`} />
+          </div>
+        </div>
+        
+        <div className="stats-container">
+          <StatBlock currentStats={character.current_stats} targetStats={character.target_stats} />
         </div>
       </div>
-      
-      <div className="stats-container">
-        <StatBlock currentStats={character.current_stats} targetStats={character.target_stats} />
-      </div>
-    </div>
+    </CharacterProvider>
   );
 }
 

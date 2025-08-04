@@ -1,7 +1,7 @@
 import { useState } from "react"
 import StatText from "./StatText";
 
-export default function ({text, currentStat, targetStat}) {
+export default function ({text, currentStat, targetStat, currentStatPath, targetStatPath}) {
 
   const red    = [204, 50, 50]
   const yellow = [231, 180, 22]
@@ -59,8 +59,8 @@ export default function ({text, currentStat, targetStat}) {
     <div className="stat-item" style={{backgroundColor: chooseColour(currentStatText, targetStatText)}}>
       <span className="stat-label">{text}</span>
       <div className="stat-values">
-        <StatText text={currentStatText} setText={setCurrentStatText}/>
-        <StatText text={targetStatText} setText={setTargetStatText}/>
+        <StatText text={currentStatText} setText={setCurrentStatText} statPath={currentStatPath}/>
+        <StatText text={targetStatText} setText={setTargetStatText} statPath={targetStatPath}/>
       </div>
     </div>
   )
