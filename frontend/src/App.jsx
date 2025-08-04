@@ -31,7 +31,7 @@ function App() {
     }
 
     return (
-        <Characters characters={characters} />
+        <Characters charactersObject={characters} />
     )
 }
 

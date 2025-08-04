@@ -6,17 +6,18 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strings"
 )
 
 // App struct
 type App struct {
 	ctx        context.Context
-	Characters []*Character
+	Characters map[string]*Character
 }
 
 // NewApp creates a new App application struct
 func NewApp() *App {
-	var characters []*Character
+	characters := make(map[string]*Character)
 	data, err := os.ReadFile("characters.json")
 	if err != nil {
 		log.Fatalf("failed to read characters.json: %v", err)
@@ -25,6 +26,7 @@ func NewApp() *App {
 	if err := json.Unmarshal(data, &characters); err != nil {
 		log.Fatalf("failed to unmarshal characters.json: %v", err)
 	}
+	fmt.Printf("Loaded characters: %v\n", characters)
 	return &App{
 		Characters: characters,
 	}
@@ -36,13 +38,13 @@ func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
 }
 
-func (a *App) GetCharacters() []*Character {
+func (a *App) GetCharacters() map[string]*Character {
 	return a.Characters
 }
 
 func (a *App) AddCharacter(character *Character) {
 	fmt.Println("Adding character:", character)
-	a.Characters = append(a.Characters, character)
+	a.Characters[strings.ToLower(character.Name)] = character
 	data, err := json.MarshalIndent(a.Characters, "", "  ")
 	if err != nil {
 		log.Fatalf("failed to marshal characters: %v", err)

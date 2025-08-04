@@ -4,4 +4,4 @@ import {main} from '../models';
 
 export function AddCharacter(arg1:main.Character):Promise<void>;
 
-export function GetCharacters():Promise<Array<main.Character>>;
+export function GetCharacters():Promise<Record<string, main.Character>>;

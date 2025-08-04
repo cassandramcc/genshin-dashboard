@@ -1,5 +1,5 @@
-[
-  {
+{
+  "neuvillette": {
     "name": "Neuvillette",
     "level": 90,
     "current_stats": {
@@ -28,7 +28,7 @@
     "element": "hydro",
     "icon": ""
   },
-  {
+  "wriothesely": {
     "name": "Wriothesely",
     "level": 90,
     "current_stats": {
@@ -56,92 +56,5 @@
     "picture": "/assets/images/Wriothesley_Card.webp",
     "element": "cryo",
     "icon": ""
-  },
-  {
-    "name": "dsfds",
-    "level": 45,
-    "current_stats": {
-      "hp": 1,
-      "attack": 3,
-      "defense": 2,
-      "elemental_mastery": 0,
-      "energy_recharge": 0,
-      "crit_rate": 4,
-      "crit_damage": 0,
-      "physical_damage_bonus": 0,
-      "elemental_damage_bonus": 0
-    },
-    "target_stats": {
-      "hp": 0,
-      "attack": 0,
-      "defense": 0,
-      "elemental_mastery": 0,
-      "energy_recharge": 0,
-      "crit_rate": 0,
-      "crit_damage": 0,
-      "physical_damage_bonus": 0,
-      "elemental_damage_bonus": 0
-    },
-    "picture": "",
-    "element": "electro",
-    "icon": ""
-  },
-  {
-    "name": "2342",
-    "level": 1,
-    "current_stats": {
-      "hp": 0,
-      "attack": 0,
-      "defense": 0,
-      "elemental_mastery": 0,
-      "energy_recharge": 0,
-      "crit_rate": 0,
-      "crit_damage": 0,
-      "physical_damage_bonus": 0,
-      "elemental_damage_bonus": 0
-    },
-    "target_stats": {
-      "hp": 0,
-      "attack": 0,
-      "defense": 55,
-      "elemental_mastery": 0,
-      "energy_recharge": 0,
-      "crit_rate": 0,
-      "crit_damage": 0,
-      "physical_damage_bonus": 0,
-      "elemental_damage_bonus": 0
-    },
-    "picture": "",
-    "element": "anemo",
-    "icon": ""
-  },
-  {
-    "name": "565",
-    "level": 2,
-    "current_stats": {
-      "hp": 0,
-      "attack": 0,
-      "defense": 0,
-      "elemental_mastery": 0,
-      "energy_recharge": 0,
-      "crit_rate": 0,
-      "crit_damage": 0,
-      "physical_damage_bonus": 2,
-      "elemental_damage_bonus": 0
-    },
-    "target_stats": {
-      "hp": 0,
-      "attack": 0,
-      "defense": 0,
-      "elemental_mastery": 0,
-      "energy_recharge": 0,
-      "crit_rate": 0,
-      "crit_damage": 0,
-      "physical_damage_bonus": 34334,
-      "elemental_damage_bonus": 0
-    },
-    "picture": "",
-    "element": "anemo",
-    "icon": ""
   }
-]
+}
