@@ -1,4 +1,5 @@
 import Character from './Character';
+import './Characters.css'
 
 function Characters({ charactersObject }) {
   let charactersList = []
@@ -8,12 +9,14 @@ function Characters({ charactersObject }) {
   }
   
   return (
-    charactersList.map((character, index) => (
-      <Character 
-          key={index}
-          character={character}
-      />)
-    )
+    <div className='characters-grid'>
+      {charactersList.map((character, index) => (
+        <Character 
+            key={index}
+            character={character}
+        />)
+      )}
+    </div>
   )
 }
 

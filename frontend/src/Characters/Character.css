@@ -2,137 +2,125 @@
 
 /* Character Component Styles */
 .character-container {
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: 'Nunito', sans-serif;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 3px solid #eaeaea67;
-    border-radius: 12px;
+  width: 32%;
+  margin: 0 auto;
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 3px solid #eaeaea67;
+  border-radius: 12px;
 }
 
 .character-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 .character-name {
-    margin: 0;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #eaeaea;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #eaeaea;
 }
 
 .character-picture {
-    width: 100px;
-    height: 200px;
-    border-radius: 10%;
-    object-fit: fill;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  height: 200px;
+  border-radius: 10%;
+  object-fit: fill;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .character-level {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #eaeaea;
-    padding: 8px 16px;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #eaeaea;
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .stats-container {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
 }
 
 .stat-block {
-    flex: 1;
-    border-radius: 12px;
-    padding: 20px;
+  flex: 1;
+  border-radius: 12px;
+  padding: 20px;
 }
 
 .stat-block h3 {
-    margin: 0 0 20px 0;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-align: center;
-    color: #eaeaea;
-    border-bottom: 2px solid #eaeaea6b;
-    padding-bottom: 10px;
+  margin: 0 0 20px 0;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #eaeaea;
+  border-bottom: 2px solid #eaeaea6b;
+  padding-bottom: 10px;
 }
 
 .stats-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .stat-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 12px;
-    border-radius: 6px;
-    background-color: #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: #eaeaea;
 }
 
 .stat-label {
-    font-weight: 600;
-    color: #141414;
-    font-size: 0.9rem;
+  font-weight: 600;
+  color: #141414;
+  font-size: 0.9rem;
 }
 
 .stat-values {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 12px;
 }
 
 .stat-value {
-    font-weight: bold;
-    color: #141414;
-    font-size: 1rem;
+  font-weight: bold;
+  color: #141414;
+  font-size: 1rem;
 }
 
 .level-icon-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .character-icon {
-    margin: 5% auto;
-    width: 60%;
-    height: 60%;
-    display: block;
+  margin: 5% auto;
+  width: 60%;
+  height: 60%;
+  display: block;
 }
 
 .notes-container {
-   text-align: center;
+  text-align: center;
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
-    .stats-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .character-header {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-    
-    .character-name {
-        font-size: 1.6rem;
-    }
+@media (max-width: 1080px) {
+  .character-container {
+    width: 50%;
+  }
 }
