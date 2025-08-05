@@ -1,4 +1,149 @@
 {
+  "ayaka": {
+    "name": "Ayaka",
+    "level": 90,
+    "current_stats": {
+      "hp": 21398,
+      "attack": 2055,
+      "defense": 821,
+      "elemental_mastery": 58,
+      "energy_recharge": 120.7,
+      "crit_rate": 68,
+      "crit_damage": 146.7,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 61.6
+    },
+    "target_stats": {
+      "hp": 17638,
+      "attack": 2121,
+      "defense": 881,
+      "elemental_mastery": 0,
+      "energy_recharge": 132.4,
+      "crit_rate": 66.1,
+      "crit_damage": 240,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 61.6
+    },
+    "picture": "",
+    "element": "cryo",
+    "icon": ""
+  },
+  "diluc": {
+    "name": "Diluc",
+    "level": 90,
+    "current_stats": {
+      "hp": 18537,
+      "attack": 12559,
+      "defense": 1002,
+      "elemental_mastery": 114,
+      "energy_recharge": 159,
+      "crit_rate": 46,
+      "crit_damage": 147,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 61
+    },
+    "target_stats": {
+      "hp": 17761,
+      "attack": 2313,
+      "defense": 800,
+      "elemental_mastery": 228,
+      "energy_recharge": 104,
+      "crit_rate": 93,
+      "crit_damage": 188,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 61
+    },
+    "picture": "",
+    "element": "pyro",
+    "icon": ""
+  },
+  "itto": {
+    "name": "Itto",
+    "level": 90,
+    "current_stats": {
+      "hp": 20949,
+      "attack": 1083,
+      "defense": 3161,
+      "elemental_mastery": 79,
+      "energy_recharge": 100,
+      "crit_rate": 42.9,
+      "crit_damage": 153.4,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 46.6
+    },
+    "target_stats": {
+      "hp": 18388,
+      "attack": 1167,
+      "defense": 2554,
+      "elemental_mastery": 0,
+      "energy_recharge": 118.8,
+      "crit_rate": 96.9,
+      "crit_damage": 194.6,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 46.4
+    },
+    "picture": "",
+    "element": "geo",
+    "icon": ""
+  },
+  "kazuha": {
+    "name": "Kazuha",
+    "level": 90,
+    "current_stats": {
+      "hp": 19114,
+      "attack": 1344,
+      "defense": 951,
+      "elemental_mastery": 891,
+      "energy_recharge": 137.6,
+      "crit_rate": 11.6,
+      "crit_damage": 90.4,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 15
+    },
+    "target_stats": {
+      "hp": 15976,
+      "attack": 1330,
+      "defense": 889,
+      "elemental_mastery": 1132,
+      "energy_recharge": 184.2,
+      "crit_rate": 17.8,
+      "crit_damage": 63.2,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 15
+    },
+    "picture": "",
+    "element": "anemo",
+    "icon": ""
+  },
+  "keqing": {
+    "name": "Keqing",
+    "level": 90,
+    "current_stats": {
+      "hp": 19706,
+      "attack": 2007,
+      "defense": 1191,
+      "elemental_mastery": 23,
+      "energy_recharge": 105.2,
+      "crit_rate": 36.9,
+      "crit_damage": 183.2,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 61.6
+    },
+    "target_stats": {
+      "hp": 18092,
+      "attack": 2212,
+      "defense": 815,
+      "elemental_mastery": 63,
+      "energy_recharge": 110.4,
+      "crit_rate": 85.5,
+      "crit_damage": 196.4,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 46.6
+    },
+    "picture": "",
+    "element": "electro",
+    "icon": ""
+  },
   "neuvillette": {
     "name": "Neuvillette",
     "level": 90,
@@ -26,6 +171,35 @@
     },
     "picture": "/assets/images/Neuvillette_Card.webp",
     "element": "hydro",
+    "icon": ""
+  },
+  "ororon": {
+    "name": "Ororon",
+    "level": 90,
+    "current_stats": {
+      "hp": 18512,
+      "attack": 1622,
+      "defense": 666,
+      "elemental_mastery": 351,
+      "energy_recharge": 104.5,
+      "crit_rate": 48.9,
+      "crit_damage": 88.1,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 46.6
+    },
+    "target_stats": {
+      "hp": 15662,
+      "attack": 1455,
+      "defense": 605,
+      "elemental_mastery": 305,
+      "energy_recharge": 155.1,
+      "crit_rate": 88.6,
+      "crit_damage": 171.2,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 46.6
+    },
+    "picture": "",
+    "element": "electro",
     "icon": ""
   },
   "test": {
@@ -61,29 +235,58 @@
     "name": "Wriothesely",
     "level": 90,
     "current_stats": {
-      "hp": 2000,
-      "attack": 100,
-      "defense": 0,
-      "elemental_mastery": 0,
-      "energy_recharge": 0,
-      "crit_rate": 100,
-      "crit_damage": 0,
+      "hp": 20755,
+      "attack": 1873,
+      "defense": 1021,
+      "elemental_mastery": 35,
+      "energy_recharge": 146.8,
+      "crit_rate": 34.6,
+      "crit_damage": 170.8,
       "physical_damage_bonus": 0,
-      "elemental_damage_bonus": 0
+      "elemental_damage_bonus": 46.6
     },
     "target_stats": {
-      "hp": 3001,
-      "attack": 200,
-      "defense": 0,
-      "elemental_mastery": 0,
-      "energy_recharge": 0,
-      "crit_rate": 0,
-      "crit_damage": 0,
+      "hp": 21435,
+      "attack": 2436,
+      "defense": 763,
+      "elemental_mastery": 19,
+      "energy_recharge": 106.5,
+      "crit_rate": 63.6,
+      "crit_damage": 262.5,
       "physical_damage_bonus": 0,
-      "elemental_damage_bonus": 0
+      "elemental_damage_bonus": 46.6
     },
     "picture": "/assets/images/Wriothesley_Card.webp",
     "element": "cryo",
+    "icon": ""
+  },
+  "zhong li": {
+    "name": "Zhong Li",
+    "level": 90,
+    "current_stats": {
+      "hp": 32233,
+      "attack": 1141,
+      "defense": 1103,
+      "elemental_mastery": 91,
+      "energy_recharge": 111.7,
+      "crit_rate": 52.5,
+      "crit_damage": 155.7,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 90.4
+    },
+    "target_stats": {
+      "hp": 32101,
+      "attack": 1818,
+      "defense": 761,
+      "elemental_mastery": 0,
+      "energy_recharge": 106.5,
+      "crit_rate": 85.9,
+      "crit_damage": 206.3,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 90.4
+    },
+    "picture": "",
+    "element": "geo",
     "icon": ""
   }
 }
