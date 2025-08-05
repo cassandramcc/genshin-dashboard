@@ -8,6 +8,7 @@ type Character struct {
 	Picture      string  `json:"picture"`
 	Element      Element `json:"element"`
 	Icon         string  `json:"icon"`
+	Notes        string  `json:"notes,omitempty"`
 }
 
 type Stats struct {

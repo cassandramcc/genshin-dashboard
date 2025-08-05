@@ -1,4 +1,33 @@
 {
+  "alhaitham": {
+    "name": "Alhaitham",
+    "level": 90,
+    "current_stats": {
+      "hp": 23297,
+      "attack": 1181,
+      "defense": 1017,
+      "elemental_mastery": 374,
+      "energy_recharge": 179.9,
+      "crit_rate": 21.7,
+      "crit_damage": 111.6,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 75.4
+    },
+    "target_stats": {
+      "hp": 18882,
+      "attack": 1203,
+      "defense": 782,
+      "elemental_mastery": 468,
+      "energy_recharge": 100,
+      "crit_rate": 101.4,
+      "crit_damage": 211.9,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 75.4
+    },
+    "picture": "",
+    "element": "dendro",
+    "icon": ""
+  },
   "ayaka": {
     "name": "Ayaka",
     "level": 90,
@@ -23,6 +52,152 @@
       "crit_damage": 240,
       "physical_damage_bonus": 0,
       "elemental_damage_bonus": 61.6
+    },
+    "picture": "",
+    "element": "cryo",
+    "icon": ""
+  },
+  "ayato": {
+    "name": "Ayato",
+    "level": 90,
+    "current_stats": {
+      "hp": 19403,
+      "attack": 2063,
+      "defense": 1032,
+      "elemental_mastery": 240,
+      "energy_recharge": 129.2,
+      "crit_rate": 63.3,
+      "crit_damage": 134.3,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 61.6
+    },
+    "target_stats": {
+      "hp": 19833,
+      "attack": 2098,
+      "defense": 869,
+      "elemental_mastery": 0,
+      "energy_recharge": 100,
+      "crit_rate": 98.9,
+      "crit_damage": 243.1,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 58.6
+    },
+    "picture": "",
+    "element": "hydro",
+    "icon": ""
+  },
+  "baizhu": {
+    "name": "Baizhu",
+    "level": 90,
+    "current_stats": {
+      "hp": 41924,
+      "attack": 1425,
+      "defense": 671,
+      "elemental_mastery": 0,
+      "energy_recharge": 202.3,
+      "crit_rate": 15.5,
+      "crit_damage": 50,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 41924,
+      "attack": 1425,
+      "defense": 671,
+      "elemental_mastery": 0,
+      "energy_recharge": 202.3,
+      "crit_rate": 15.1,
+      "crit_damage": 50,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "picture": "",
+    "element": "dendro",
+    "icon": "",
+    "notes": "He's just for healing"
+  },
+  "beidou": {
+    "name": "Beidou",
+    "level": 80,
+    "current_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "picture": "",
+    "element": "electro",
+    "icon": ""
+  },
+  "bennett": {
+    "name": "Bennett",
+    "level": 90,
+    "current_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "picture": "",
+    "element": "pyro",
+    "icon": ""
+  },
+  "chongyun": {
+    "name": "Chongyun",
+    "level": 80,
+    "current_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
     },
     "picture": "",
     "element": "cryo",
@@ -57,6 +232,93 @@
     "element": "pyro",
     "icon": ""
   },
+  "gorou": {
+    "name": "Gorou",
+    "level": 90,
+    "current_stats": {
+      "hp": 17220,
+      "attack": 1016,
+      "defense": 2250,
+      "elemental_mastery": 240,
+      "energy_recharge": 208.5,
+      "crit_rate": 8.5,
+      "crit_damage": 91.2,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 24
+    },
+    "target_stats": {
+      "hp": 14902,
+      "attack": 1042,
+      "defense": 2656,
+      "elemental_mastery": 0,
+      "energy_recharge": 182.6,
+      "crit_rate": 11.2,
+      "crit_damage": 96.6,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 24
+    },
+    "picture": "",
+    "element": "geo",
+    "icon": ""
+  },
+  "heizou": {
+    "name": "Heizou",
+    "level": 90,
+    "current_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "picture": "",
+    "element": "anemo",
+    "icon": ""
+  },
+  "ifa": {
+    "name": "Ifa",
+    "level": 70,
+    "current_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "picture": "",
+    "element": "anemo",
+    "icon": ""
+  },
   "itto": {
     "name": "Itto",
     "level": 90,
@@ -84,6 +346,64 @@
     },
     "picture": "",
     "element": "geo",
+    "icon": ""
+  },
+  "kaeya": {
+    "name": "Kaeya",
+    "level": 90,
+    "current_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "picture": "",
+    "element": "cryo",
+    "icon": ""
+  },
+  "kaveh": {
+    "name": "Kaveh",
+    "level": 80,
+    "current_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "picture": "",
+    "element": "dendro",
     "icon": ""
   },
   "kazuha": {
@@ -142,7 +462,8 @@
     },
     "picture": "",
     "element": "electro",
-    "icon": ""
+    "icon": "",
+    "notes": "Need to change artifact set to Thundersoother"
   },
   "neuvillette": {
     "name": "Neuvillette",
@@ -171,6 +492,35 @@
     },
     "picture": "/assets/images/Neuvillette_Card.webp",
     "element": "hydro",
+    "icon": ""
+  },
+  "ningguang": {
+    "name": "Ningguang",
+    "level": 90,
+    "current_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "picture": "",
+    "element": "geo",
     "icon": ""
   },
   "ororon": {
@@ -202,9 +552,9 @@
     "element": "electro",
     "icon": ""
   },
-  "test": {
-    "name": "test",
-    "level": 12,
+  "razor": {
+    "name": "Razor",
+    "level": 70,
     "current_stats": {
       "hp": 0,
       "attack": 0,
@@ -228,7 +578,94 @@
       "elemental_damage_bonus": 0
     },
     "picture": "",
-    "element": "cryo",
+    "element": "electro",
+    "icon": ""
+  },
+  "sucrose": {
+    "name": "Sucrose",
+    "level": 90,
+    "current_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "picture": "",
+    "element": "anemo",
+    "icon": ""
+  },
+  "thoma": {
+    "name": "Thoma",
+    "level": 90,
+    "current_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "picture": "",
+    "element": "pyro",
+    "icon": ""
+  },
+  "tighnari": {
+    "name": "Tighnari",
+    "level": 90,
+    "current_stats": {
+      "hp": 16860,
+      "attack": 1598,
+      "defense": 798,
+      "elemental_mastery": 319,
+      "energy_recharge": 144,
+      "crit_rate": 39.5,
+      "crit_damage": 147.7,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 90.4
+    },
+    "target_stats": {
+      "hp": 16108,
+      "attack": 1528,
+      "defense": 630,
+      "elemental_mastery": 249,
+      "energy_recharge": 135.6,
+      "crit_rate": 73.7,
+      "crit_damage": 216.1,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 90.4
+    },
+    "picture": "",
+    "element": "dendro",
     "icon": ""
   },
   "wriothesely": {
@@ -258,6 +695,93 @@
     },
     "picture": "/assets/images/Wriothesley_Card.webp",
     "element": "cryo",
+    "icon": ""
+  },
+  "xiangling": {
+    "name": "Xiangling",
+    "level": 70,
+    "current_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "picture": "",
+    "element": "pyro",
+    "icon": ""
+  },
+  "xingqiu": {
+    "name": "Xingqiu",
+    "level": 90,
+    "current_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "picture": "",
+    "element": "hydro",
+    "icon": ""
+  },
+  "xinyan": {
+    "name": "Xinyan",
+    "level": 90,
+    "current_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "target_stats": {
+      "hp": 0,
+      "attack": 0,
+      "defense": 0,
+      "elemental_mastery": 0,
+      "energy_recharge": 0,
+      "crit_rate": 0,
+      "crit_damage": 0,
+      "physical_damage_bonus": 0,
+      "elemental_damage_bonus": 0
+    },
+    "picture": "",
+    "element": "pyro",
     "icon": ""
   },
   "zhong li": {

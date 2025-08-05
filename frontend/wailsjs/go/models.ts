@@ -36,6 +36,7 @@ export namespace main {
 	    picture: string;
 	    element: string;
 	    icon: string;
+	    notes?: string;
 	
 	    static createFrom(source: any = {}) {
 	        return new Character(source);
@@ -50,6 +51,7 @@ export namespace main {
 	        this.picture = source["picture"];
 	        this.element = source["element"];
 	        this.icon = source["icon"];
+	        this.notes = source["notes"];
 	    }
 	
 		convertValues(a: any, classs: any, asMap: boolean = false): any {

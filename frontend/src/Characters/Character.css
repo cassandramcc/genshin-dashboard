@@ -115,6 +115,10 @@
     display: block;
 }
 
+.notes-container {
+   text-align: center;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .stats-container {

@@ -12,6 +12,7 @@ const handleSubmit = (event) => {
     name: event.target.name.value,
     element: event.target.element.value,
     level: parseInt(event.target.level.value),
+    notes: event.target.notes.value,
     current_stats: {
       hp: parseFloat(event.target[`${currentPrefix}hp`].value),
       attack: parseFloat(event.target[`${currentPrefix}atk`].value),
@@ -71,6 +72,9 @@ export default ({ text }) => (
           <label htmlFor='level'>Level</label>
           <input type="number" id="level" min="1" max="90"/>
 
+          <label htmlFor='notes'>Notes</label>
+          <textarea id="notes" rows="5" cols="15" placeholder="Add any notes about the character here..."></textarea>
+
           <div className='form-submit'>
             <button type="submit">Submit</button>
           </div>
@@ -83,8 +87,6 @@ export default ({ text }) => (
 
         <FormStats title="Current Stats" idPrefix={`${currentPrefix}`}/>
         <FormStats title="Target Stats" idPrefix={`${targetPrefix}`}/>
-
-
       
     </form>
   </Popup>

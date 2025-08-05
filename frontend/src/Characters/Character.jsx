@@ -45,6 +45,13 @@ function Character({ character }) {
         <div className="stats-container">
           <StatBlock currentStats={character.current_stats} targetStats={character.target_stats} />
         </div>
+
+        {character.notes && character.notes.length > 0 && (
+          <div className="notes-container">
+            <p>{character.notes}</p>
+          </div>
+        )}
+
       </div>
     </CharacterProvider>
   );
