@@ -10,7 +10,7 @@
       "energy_recharge": 118.1,
       "crit_rate": 49.3,
       "crit_damage": 139.6,
-      "physical_damage_bonus": 1,
+      "physical_damage_bonus": 0,
       "elemental_damage_bonus": 75.4
     },
     "target_stats": {
@@ -21,10 +21,10 @@
       "energy_recharge": 100,
       "crit_rate": 101.4,
       "crit_damage": 211.9,
-      "physical_damage_bonus": 20,
+      "physical_damage_bonus": 0,
       "elemental_damage_bonus": 75.4
     },
-    "picture": "",
+    "picture": "/assets/images/Alhaitham_Card.png",
     "element": "dendro",
     "icon": ""
   },
@@ -53,7 +53,7 @@
       "physical_damage_bonus": 0,
       "elemental_damage_bonus": 61.6
     },
-    "picture": "",
+    "picture": "/assets/images/Kamisato_Ayaka_Card.png",
     "element": "cryo",
     "icon": ""
   },
@@ -82,7 +82,7 @@
       "physical_damage_bonus": 0,
       "elemental_damage_bonus": 58.6
     },
-    "picture": "",
+    "picture": "/assets/images/Kamisato_Ayato_Card.png",
     "element": "hydro",
     "icon": ""
   },
@@ -111,7 +111,7 @@
       "physical_damage_bonus": 0,
       "elemental_damage_bonus": 0
     },
-    "picture": "",
+    "picture": "/assets/images/Baizhu_Card.png",
     "element": "dendro",
     "icon": "",
     "notes": "He's just for healing"
@@ -141,7 +141,7 @@
       "physical_damage_bonus": 0,
       "elemental_damage_bonus": 0
     },
-    "picture": "",
+    "picture": "/assets/images/Beidou_Card.png",
     "element": "electro",
     "icon": ""
   },
@@ -170,7 +170,7 @@
       "physical_damage_bonus": 0,
       "elemental_damage_bonus": 0
     },
-    "picture": "",
+    "picture": "/assets/images/Bennett_Card.png",
     "element": "pyro",
     "icon": ""
   },

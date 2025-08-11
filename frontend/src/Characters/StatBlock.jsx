@@ -27,7 +27,7 @@ export default function ({ name, currentStats, targetStats }) {
   <div className="stat-block">
     <div className="stats-grid">
       {createStatsBlock()}
-      <StatItem text="CV" currentStat={currentStats.crit_rate * 2 + currentStats.crit_damage} targetStat={targetStats.crit_rate * 2 + targetStats.crit_damage} />
+      <StatItem text="CV" currentStat={Math.round(currentStats.crit_rate * 2 + currentStats.crit_damage)} targetStat={Math.round(targetStats.crit_rate * 2 + targetStats.crit_damage)} />
     </div>
   </div>
   );
