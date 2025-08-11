@@ -444,8 +444,8 @@
       "defense": 799,
       "elemental_mastery": 37,
       "energy_recharge": 132,
-      "crit_rate": 57.900001525878906,
-      "crit_damage": 136.60000610351562,
+      "crit_rate": 57.9,
+      "crit_damage": 136.6,
       "physical_damage_bonus": 0,
       "elemental_damage_bonus": 61.6
     },

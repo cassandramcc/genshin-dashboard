@@ -108,3 +108,30 @@ func (a *App) UpdateCharacter(path string, value float32) map[string]*Character 
 	a.Characters = getCharactersFromDB()
 	return a.Characters
 }
+
+func (a *App) DeleteCharacter(name string) map[string]*Character {
+	fmt.Printf("Deleting character: %s\n", name)
+	if _, exists := a.Characters[strings.ToLower(name)]; !exists {
+		log.Fatalf("Character %s does not exist", name)
+		return nil
+	}
+
+	delete(a.Characters, strings.ToLower(name))
+	data, err := json.MarshalIndent(a.Characters, "", "  ")
+	if err != nil {
+		log.Fatalf("failed to marshal characters: %v", err)
+		return nil
+	}
+	if err := os.WriteFile("characters-new.json", data, 0644); err != nil {
+		log.Fatalf("failed to write characters-new.json, not overwriting old file: %v", err)
+		return nil
+	}
+	// overwrite the old file
+	if err := os.Rename("characters-new.json", "characters.json"); err != nil {
+		log.Fatalf("failed to rename characters-new.json to characters.json: %v", err)
+		return nil
+	}
+	// Update the in-memory characters to match the file
+	a.Characters = getCharactersFromDB()
+	return a.Characters
+}

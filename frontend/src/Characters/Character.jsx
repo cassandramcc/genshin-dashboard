@@ -1,29 +1,39 @@
 import './css/Character.css';
 import StatBlock from './StatBlock';
+import { DeleteCharacter } from '../../wailsjs/go/main/App';
 
-function Character({ character }) {
+function Character({ character, setCharacters }) {
 
-    function convertElement(element) {
-        switch (element) {
-        case "anemo":
-            return "/assets/images/anemo.png"
-        case "geo":
-            return "/assets/images/geo.png"
-        case "electro":
-            return "/assets/images/electro.png"
-        case "dendro":
-            return "/assets/images/dendro.png"
-        case "hydro":
-            return "/assets/images/hydro.png"
-        case "pyro":
-            return "/assets/images/pyro.png"
-        case "cryo":
-            return "/assets/images/cryo.png"
-        default:
-            return "/assets/images/unknown.png"
-        }
+  function convertElement(element) {
+    switch (element) {
+    case "anemo":
+      return "/assets/images/anemo.png"
+    case "geo":
+      return "/assets/images/geo.png"
+    case "electro":
+      return "/assets/images/electro.png"
+    case "dendro":
+      return "/assets/images/dendro.png"
+    case "hydro":
+      return "/assets/images/hydro.png"
+    case "pyro":
+      return "/assets/images/pyro.png"
+    case "cryo":
+      return "/assets/images/cryo.png"
+    default:
+      return "/assets/images/unknown.png"
     }
+  }
 
+  function deleteCharacter() {
+    if (confirm(`Are you sure you want to delete ${character.name}?`)) {
+      DeleteCharacter(character.name).then((characters) => {
+        setCharacters(characters);
+      }).catch((error) => {
+        console.error('Error deleting character:', error);
+      });
+    }
+  }
 
   if (!character) {
     return <div className="character-container">No character data available</div>;
@@ -31,6 +41,9 @@ function Character({ character }) {
 
   return (
     <div className="character-container">
+      <div className="character-actions">
+        <button className="character-delete-button" onClick={deleteCharacter}>Delete</button>
+      </div>
       <div className="character-header">
         <img src={character.picture} className="character-picture" />
         <h2 className="character-name">{character.name}</h2>

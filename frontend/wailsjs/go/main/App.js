@@ -6,6 +6,10 @@ export function AddCharacter(arg1) {
   return window['go']['main']['App']['AddCharacter'](arg1);
 }
 
+export function DeleteCharacter(arg1) {
+  return window['go']['main']['App']['DeleteCharacter'](arg1);
+}
+
 export function GetCharacters() {
   return window['go']['main']['App']['GetCharacters']();
 }

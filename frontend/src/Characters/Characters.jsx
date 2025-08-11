@@ -1,7 +1,7 @@
 import Character from './Character';
 import './css/Characters.css'
 
-function Characters({ charactersObject }) {
+function Characters({ charactersObject, setCharacters }) {
   let charactersList = []
   const charactersMap = new Map(Object.entries(charactersObject || {}));
   for (const [_, character] of charactersMap) {
@@ -12,8 +12,9 @@ function Characters({ charactersObject }) {
     <div className='characters-grid'>
       {charactersList.map((character, index) => (
         <Character 
-            key={index}
-            character={character}
+          key={index}
+          character={character}
+          setCharacters={setCharacters}
         />)
       )}
     </div>

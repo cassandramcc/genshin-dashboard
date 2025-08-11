@@ -36,7 +36,7 @@ function App() {
     <>
       <Titlebar setCharacters={setCharacters} />
       <AppProvider setCharacters={setCharacters}>
-        <Characters charactersObject={characters} />
+        <Characters charactersObject={characters} setCharacters={setCharacters} />
       </AppProvider>
     </>
   )

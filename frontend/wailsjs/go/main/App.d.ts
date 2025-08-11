@@ -4,6 +4,8 @@ import {main} from '../models';
 
 export function AddCharacter(arg1:main.Character):Promise<Record<string, main.Character>>;
 
+export function DeleteCharacter(arg1:string):Promise<Record<string, main.Character>>;
+
 export function GetCharacters():Promise<Record<string, main.Character>>;
 
 export function UpdateCharacter(arg1:string,arg2:number):Promise<Record<string, main.Character>>;
