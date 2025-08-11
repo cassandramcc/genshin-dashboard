@@ -6,7 +6,7 @@ import FormStats from './FormStats';
 const currentPrefix = 'current_';
 const targetPrefix = 'target_';
 
-const handleSubmit = (event) => {
+function handleSubmit(event, setCharacters) {
   event.preventDefault();
   let character = {
     name: event.target.name.value,
@@ -37,12 +37,13 @@ const handleSubmit = (event) => {
     }
   }
 
-  addCharacter({character: character});
+  addCharacter({character: character, setCharacters: setCharacters});
 }
 
-function addCharacter({character}) {
-  AddCharacter(character).then(() => {
+function addCharacter({character, setCharacters}) {
+  AddCharacter(character).then((characters) => {
     alert('Character added successfully!')
+    setCharacters(characters);
   }).catch((error) => {
     alert('Failed to add character: ' + error.message);
   })
@@ -51,18 +52,18 @@ function addCharacter({character}) {
 function createElementRadio() {
   const elements = ['anemo', 'geo', 'electro', 'dendro', 'hydro', 'pyro', 'cryo'];
   return elements.map((element) => (
-      <div key={element}>
-        <input type="radio" name="element" value={element} id={element}/>
-        <label htmlFor={element}>{element.charAt(0).toUpperCase() + element.slice(1)}</label>
-      </div>
+    <div key={element}>
+      <input type="radio" name="element" value={element} id={element}/>
+      <label htmlFor={element}>{element.charAt(0).toUpperCase() + element.slice(1)}</label>
+    </div>
   ));
 }
 
 
-export default ({ text }) => (
+export default ({ text, setCharacters }) => (
 
   <Popup trigger={<button> {text}</button>} modal>
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="form" onSubmit={e => handleSubmit(e, setCharacters)}>
         
         <div className='form-header'>
           <h3>Add Character</h3>

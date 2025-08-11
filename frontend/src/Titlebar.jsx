@@ -1,10 +1,10 @@
 import './Titlebar.css'
 import Popup from './Popup';
 
-function Titlebar() {
+function Titlebar({ setCharacters }) {
   return (
     <div className="titlebar">
-      <Popup text={"Add Character"}/>
+      <Popup text={"Add Character"} setCharacters={setCharacters}/>
       <div className="title">
         <img src="/assets/images/icon.png"/>
         <h1>Genshin Dashboard</h1>

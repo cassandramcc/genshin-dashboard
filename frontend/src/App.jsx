@@ -3,6 +3,7 @@ import './App.css';
 import {GetCharacters} from "../wailsjs/go/main/App";
 import Characters from './Characters/Characters';
 import {AppProvider} from './AppContext';
+import Titlebar from './Titlebar'
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -32,9 +33,12 @@ function App() {
   }
 
   return (
-    <AppProvider setCharacters={setCharacters}>
-      <Characters charactersObject={characters} />
-    </AppProvider>
+    <>
+      <Titlebar setCharacters={setCharacters} />
+      <AppProvider setCharacters={setCharacters}>
+        <Characters charactersObject={characters} />
+      </AppProvider>
+    </>
   )
 }
 
