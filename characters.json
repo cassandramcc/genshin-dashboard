@@ -7,10 +7,10 @@
       "attack": 1126,
       "defense": 1053,
       "elemental_mastery": 416,
-      "energy_recharge": 118.0999984741211,
-      "crit_rate": 49.29999923706055,
-      "crit_damage": 139.60000610351562,
-      "physical_damage_bonus": 0,
+      "energy_recharge": 118.1,
+      "crit_rate": 49.3,
+      "crit_damage": 139.6,
+      "physical_damage_bonus": 1,
       "elemental_damage_bonus": 75.4
     },
     "target_stats": {
@@ -21,7 +21,7 @@
       "energy_recharge": 100,
       "crit_rate": 101.4,
       "crit_damage": 211.9,
-      "physical_damage_bonus": 0,
+      "physical_damage_bonus": 20,
       "elemental_damage_bonus": 75.4
     },
     "picture": "",
@@ -211,9 +211,9 @@
       "attack": 2638,
       "defense": 998,
       "elemental_mastery": 58,
-      "energy_recharge": 116.19999694824219,
-      "crit_rate": 63.900001525878906,
-      "crit_damage": 137.89999389648438,
+      "energy_recharge": 116.2,
+      "crit_rate": 63.9,
+      "crit_damage": 137.9,
       "physical_damage_bonus": 0,
       "elemental_damage_bonus": 61
     },
@@ -299,21 +299,21 @@
       "defense": 576,
       "elemental_mastery": 127,
       "energy_recharge": 128.5,
-      "crit_rate": 66.4000015258789,
+      "crit_rate": 66.4,
       "crit_damage": 85,
       "physical_damage_bonus": 0,
-      "elemental_damage_bonus": 46.599998474121094
+      "elemental_damage_bonus": 46.6
     },
     "target_stats": {
       "hp": 15331,
       "attack": 2291,
       "defense": 657,
       "elemental_mastery": 119,
-      "energy_recharge": 122.69999694824219,
-      "crit_rate": 90.19999694824219,
+      "energy_recharge": 122.7,
+      "crit_rate": 90.2,
       "crit_damage": 213,
       "physical_damage_bonus": 0,
-      "elemental_damage_bonus": 46.599998474121094
+      "elemental_damage_bonus": 46.6
     },
     "picture": "",
     "element": "anemo",
@@ -328,8 +328,8 @@
       "defense": 2584,
       "elemental_mastery": 79,
       "energy_recharge": 100,
-      "crit_rate": 63.099998474121094,
-      "crit_damage": 152.60000610351562,
+      "crit_rate": 63.1,
+      "crit_damage": 152.6,
       "physical_damage_bonus": 0,
       "elemental_damage_bonus": 46.6
     },

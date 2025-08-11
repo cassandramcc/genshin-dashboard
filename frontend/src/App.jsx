@@ -32,7 +32,7 @@ function App() {
   }
 
   return (
-    <AppProvider>
+    <AppProvider setCharacters={setCharacters}>
       <Characters charactersObject={characters} />
     </AppProvider>
   )

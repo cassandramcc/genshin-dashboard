@@ -3,7 +3,7 @@ import { UpdateCharacter } from '../wailsjs/go/main/App';
 
 const AppContext = createContext();
 
-export function AppProvider({ children }) {
+export function AppProvider({ children, setCharacters }) {
   const updateStat = async (statPath, value) => {
     try {
       // Convert the value to a number if it's a string
@@ -16,7 +16,7 @@ export function AppProvider({ children }) {
       
       // Call the Go backend to update the JSON file
       await UpdateCharacter(statPath, numericValue);
-      console.log(`Updated ${statPath} to ${numericValue}`);
+
     } catch (error) {
       console.error('Error updating character stat:', error);
     }
