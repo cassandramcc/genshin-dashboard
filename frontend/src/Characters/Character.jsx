@@ -1,4 +1,4 @@
-import './Character.css';
+import './css/Character.css';
 import StatBlock from './StatBlock';
 
 function Character({ character }) {

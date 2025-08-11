@@ -1,5 +1,5 @@
 import Character from './Character';
-import './Characters.css'
+import './css/Characters.css'
 
 function Characters({ charactersObject }) {
   let charactersList = []
