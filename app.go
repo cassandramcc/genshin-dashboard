@@ -8,6 +8,7 @@ import (
 	"os"
 	"strings"
 
+	"github.com/tidwall/gjson"
 	"github.com/tidwall/sjson"
 )
 
@@ -50,6 +51,7 @@ func (a *App) AddCharacter(character *Character) {
 	data, err := json.MarshalIndent(a.Characters, "", "  ")
 	if err != nil {
 		log.Fatalf("failed to marshal characters: %v", err)
+		return
 	}
 	if err := os.WriteFile("characters-new.json", data, 0644); err != nil {
 		log.Fatalf("failed to write characters-new.json, not overwriting old file: %v", err)
@@ -61,21 +63,25 @@ func (a *App) AddCharacter(character *Character) {
 	}
 }
 
-func (a *App) UpdateCharacter(name, path string, value float32) {
-	fmt.Printf("Updating character %s at path %s with value %f\n", name, path, value)
-	_, exists := a.Characters[strings.ToLower(name)]
-	if !exists {
-		log.Fatalf("Updating a character which doesn't exist: %s", name)
-	}
+func (a *App) UpdateCharacter(path string, value float32) {
+	fmt.Printf("Updating character at path %s with value %f\n", path, value)
 
 	currentData, err := os.ReadFile("characters.json")
 	if err != nil {
 		log.Fatalf("failed to read characters.json: %v", err)
+		return
+	}
+
+	result := gjson.GetBytes(currentData, path)
+	if !result.Exists() {
+		log.Fatalf("Updating a character which doesn't exist at path: %s", path)
+		return
 	}
 
 	newData, err := sjson.SetBytes(currentData, path, value)
 	if err != nil {
 		log.Fatalf("failed to update characters.json: %v", err)
+		return
 	}
 
 	if err := os.WriteFile("characters-new.json", newData, 0644); err != nil {

@@ -2,37 +2,40 @@ import {useState, useEffect} from 'react';
 import './App.css';
 import {GetCharacters} from "../wailsjs/go/main/App";
 import Characters from './Characters/Characters';
+import {AppProvider} from './AppContext';
 
 function App() {
-    const [characters, setCharacters] = useState([]);
-    const [loading, setLoading] = useState(true);
+  const [characters, setCharacters] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        getCharacters();
-    }, []);
+  useEffect(() => {
+    getCharacters();
+  }, []);
 
-    function getCharacters() {
-        setLoading(true);
-        GetCharacters().then((characters) => {
-            setCharacters(characters);
-            setLoading(false);
-        }).catch((error) => {
-            console.error('Error fetching characters:', error);
-            setLoading(false);
-        });
-    }
+  function getCharacters() {
+    setLoading(true);
+    GetCharacters().then((characters) => {
+      setCharacters(characters);
+      setLoading(false);
+    }).catch((error) => {
+      console.error('Error fetching characters:', error);
+      setLoading(false);
+    });
+  }
 
-    if (loading) {
-        return <div>Loading characters...</div>;
-    }
+  if (loading) {
+    return <div>Loading characters...</div>;
+  }
 
-    if (characters.length === 0) {
-        return <div>No characters found.</div>;
-    }
+  if (characters.length === 0) {
+    return <div>No characters found.</div>;
+  }
 
-    return (
-        <Characters charactersObject={characters} />
-    )
+  return (
+    <AppProvider>
+      <Characters charactersObject={characters} />
+    </AppProvider>
+  )
 }
 
 export default App

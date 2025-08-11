@@ -10,6 +10,6 @@ export function GetCharacters() {
   return window['go']['main']['App']['GetCharacters']();
 }
 
-export function UpdateCharacter(arg1, arg2, arg3) {
-  return window['go']['main']['App']['UpdateCharacter'](arg1, arg2, arg3);
+export function UpdateCharacter(arg1, arg2) {
+  return window['go']['main']['App']['UpdateCharacter'](arg1, arg2);
 }

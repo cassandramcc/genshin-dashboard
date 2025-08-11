@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { useCharacterContext } from "./CharacterContext";
+import { useAppContext } from "../AppContext";
 
 export default function ({ text, setText, statPath }) {
   const [editing, setEditing] = useState(false);
-  const { updateStat } = useCharacterContext();
+  const { updateStat } = useAppContext();
 
   function handleDoubleClick() {
     setEditing(true)

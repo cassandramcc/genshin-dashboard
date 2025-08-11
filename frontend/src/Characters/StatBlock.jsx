@@ -1,9 +1,10 @@
 import StatItem from "./StatItem";
 
-export default function ({ currentStats, targetStats }) {
+export default function ({ name, currentStats, targetStats }) {
 
-  const currentStatsPath = "current_stats."
-  const targetStatsPath = "target_stats."
+  function createStatPath(name, section, text) {
+    return `${name.toLowerCase()}.${section}.${convertStatText(text)}`;
+  }
 
   function convertStatText(text) {
     return text.toLowerCase().replaceAll(" ", "_");
@@ -12,8 +13,13 @@ export default function ({ currentStats, targetStats }) {
   function createStatsBlock() {
     const statList = ["HP", "Attack", "Defense", "Elemental Mastery", "Energy Recharge", "Crit Rate", "Crit Damage", "Elemental Damage Bonus", "Physical Damage Bonus"];
     return statList.map(stat => (
-      <StatItem text={stat} currentStat={currentStats[convertStatText(stat)]} targetStat={targetStats[convertStatText(stat)]} 
-                currentStatPath={currentStatsPath + convertStatText(stat)} targetStatPath={targetStatsPath + convertStatText(stat)} />
+      <StatItem 
+        text={stat} 
+        currentStat={currentStats[convertStatText(stat)]}
+        targetStat={targetStats[convertStatText(stat)]} 
+        currentStatPath={createStatPath(name, "current_stats", stat)} 
+        targetStatPath={createStatPath(name, "target_stats", stat)} 
+      />
     ));
   }
 

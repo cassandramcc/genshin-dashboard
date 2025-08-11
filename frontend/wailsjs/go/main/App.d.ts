@@ -6,4 +6,4 @@ export function AddCharacter(arg1:main.Character):Promise<void>;
 
 export function GetCharacters():Promise<Record<string, main.Character>>;
 
-export function UpdateCharacter(arg1:string,arg2:string,arg3:number):Promise<void>;
+export function UpdateCharacter(arg1:string,arg2:number):Promise<void>;

@@ -1,6 +1,5 @@
 import './Character.css';
 import StatBlock from './StatBlock';
-import { CharacterProvider } from './CharacterContext';
 
 function Character({ character }) {
 
@@ -31,29 +30,27 @@ function Character({ character }) {
   }
 
   return (
-    <CharacterProvider characterName={character.name.toLowerCase()}>
-      <div className="character-container">
-        <div className="character-header">
-          <img src={character.picture} className="character-picture" />
-          <h2 className="character-name">{character.name}</h2>
-          <div className="level-icon-block">
-              <span className="character-level">Level {character.level}</span>
-              <img src={convertElement(character.element)} className="character-icon" alt={`${character.name} icon`} />
-          </div>
+    <div className="character-container">
+      <div className="character-header">
+        <img src={character.picture} className="character-picture" />
+        <h2 className="character-name">{character.name}</h2>
+        <div className="level-icon-block">
+            <span className="character-level">Level {character.level}</span>
+            <img src={convertElement(character.element)} className="character-icon" alt={`${character.name} icon`} />
         </div>
-        
-        <div className="stats-container">
-          <StatBlock currentStats={character.current_stats} targetStats={character.target_stats} />
-        </div>
-
-        {character.notes && character.notes.length > 0 && (
-          <div className="notes-container">
-            <p>{character.notes}</p>
-          </div>
-        )}
-
       </div>
-    </CharacterProvider>
+      
+      <div className="stats-container">
+        <StatBlock name={character.name.toLowerCase()} currentStats={character.current_stats} targetStats={character.target_stats} />
+      </div>
+
+      {character.notes && character.notes.length > 0 && (
+        <div className="notes-container">
+          <p>{character.notes}</p>
+        </div>
+      )}
+
+    </div>
   );
 }
 
